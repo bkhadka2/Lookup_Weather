@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+
+body {
+  background-color: lightblue;
+}
+
+form {
+  margin-left: 35%;
+  font-size: 18px;
+}
+
+.card.text-center {
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+h5 {
+    text-align: center;
+    font-family: cursive;
+}
+
+h3 {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}

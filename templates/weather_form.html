@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block title %} Weather App {% endblock %} {% block
+h1 %} Lookup Weather Information {% endblock %} {% block body %}
+<form action="/" , method="POST" class="form-class">
+  <label for="zipcode"> Zip Code</label>
+  <input type="text" name="zipcode" class="input-text" />
+  <input type="submit" value="submit" class="input-text" />
+</form>
+{% if zip %}
+<div class="card text-center">
+  <div class="card-header">Weather Information</div>
+  <div class="card-body">
+    <h3 class="card-title">{{city}}, {{country}}</h3>
+    <h5><b>Temperature (F): </b> {{tempf}} °F</h5>
+    <h5><b>Temperature (C): </b> {{tempc}} °C</h5>
+    <h5><b>Humidity: </b> {{humid}}%</h5>
+    <h5><b>Sky: </b> {{sky_status}}</h5>
+  </div>
+</div>
+{% endif %} {% endblock %}
